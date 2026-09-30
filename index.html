@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Mahasiswa</title>
+</head>
+<body>
+    <header>
+        <h1>Sistem Informasi Mahasiswa</h1>
+        <p>Sistem yang berguna untuk memananjemen data mahasiswa</p>
+        <img src="alfath.jpg" alt="Logo Sistem" width="150" height="150">
+        <hr>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#informasi"> Informasi Aplikasi</a>
+                </li>
+                <li>
+                    <a href="#daftar-mahasiswa">Daftar Mahasiswa</a>
+                </li>
+                <li>
+                    <a href="#form-tambah">Tambah Mahasiswa</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <main> 
+            <section id="informasi">
+                <h2>
+                    Informasi Sistem
+                </h2>
+                <p>Sistem ini adalah sistem untuk mengelola data mahasiswa</p>
+                <article>
+                    <h3>Mahasiswa Informatika</h3>
+                    <p>Mahasiswa Informatika hebat dalam coding</p>
+                </article>
+            </section>
+            <hr>
+            <section id="#daftar-mahasiswa">
+                <h2>Daftar Mahasiswa Aktif</h2>
+                <p>Berikut Merupakan Mahasiswa Aktif</p>
+                <table border="1" cellpadding="8" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Foto</th>
+                            <th>NPM</th>
+                            <th>Nama Lengkap</th>
+                            <th>Program Studi</th>
+                            <th>Angkatan</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="alfath.jpg" alt="foto alfath" width="50" height="50"></td>
+                            <td>2415061014</td>
+                            <td>Alfath Ariya Ilahi</td>
+                            <td>Teknik Informatika</td>
+                            <td>2024</td>
+                            <td>alfath@gmail.com</td>
+                        </tr>
+                         <tr>
+                            <td>2</td>
+                            <td><img src="random1.jpg" alt="foto leyva" width="50" height="50"></td>
+                            <td>2415061017</td>
+                            <td>Leyva Nathaniel</td>
+                            <td>Teknik Mesin</td>
+                            <td>2024</td>
+                            <td>leyva@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="random2.jpg" alt="foto xeyfa" width="50" height="50"></td>
+                            <td>2415061098</td>
+                            <td>Xeyfath Nomoda</td>
+                            <td>Teknik Lingkungan</td>
+                            <td>2024</td>
+                            <td>Xeyfa@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section id="form-tambah">
+                <h2>
+                    Tambah Mahasiswa Baru
+                </h2>
+                <p>Tambahkan Mahasiswa baru disini</p>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Isi Disini</legend>
+                        <p>
+                        <label for="npm">Nomor Pokok Mahasiswa</label><br>
+                        <input type="text" id="npm" name="npm"  placeholder="2415061014" required pattern="[0-9]{8-12}">
+                        <br> <small>masukan npm</small>
+                        </p>
+                        <p>
+                            <label for="nama">Nama Lengkap</label><br>
+                            <input type="text" name="nama" id="nama" placeholder="alfath" required minlength="3" maxlength="100"><br>
+                            <small>Masukan Nama</small>
+                        </p>
+                        <p>
+                            <label for="program_studi">Program Studi</label><br>
+                            <select name="program_studi" id="program_studi" required>
+                                <option value="">Pilih</option>
+                                <option value="mesin">Teknik Mesin</option>
+                                <option value="hutan">Teknik Hutan</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="angaktan">Tangkatan</label><br>
+                            <input type="number" id="angkatan" name="angkatan" placeholder="1234" required min="2018" max="2026"><br>
+                            <small>isi angkatan</small>
+                        </p>
+                        <p>
+                            <label for="email"> Email</label><br>
+                            <input type="email" name="email" id="email" placeholder="masukan email" required><br>
+                        </p>
+                        <p>
+                            <button type="submit">Simpan Data</button>
+                            <button type="reset">Reset Data</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </header>
+</body>
+</html>
